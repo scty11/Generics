@@ -1,0 +1,12 @@
+c:\users\scott\documents\visual studio 2013\Projects\DataStructures\DataStructures\bin\Debug\DataStructures.exe.config
+c:\users\scott\documents\visual studio 2013\Projects\DataStructures\DataStructures\bin\Debug\DataStructures.exe
+c:\users\scott\documents\visual studio 2013\Projects\DataStructures\DataStructures\bin\Debug\DataStructures.pdb
+c:\users\scott\documents\visual studio 2013\Projects\DataStructures\DataStructures\obj\Debug\DataStructures.csprojResolveAssemblyReference.cache
+c:\users\scott\documents\visual studio 2013\Projects\DataStructures\DataStructures\obj\Debug\DataStructures.exe
+c:\users\scott\documents\visual studio 2013\Projects\DataStructures\DataStructures\obj\Debug\DataStructures.pdb
+C:\Users\scottyboi\Documents\jquery\code\csharp-generics\1-csharp-generics-m1-why-exercise-files\excercises\before\DataStructures\DataStructures\bin\Debug\DataStructures.exe.config
+C:\Users\scottyboi\Documents\jquery\code\csharp-generics\1-csharp-generics-m1-why-exercise-files\excercises\before\DataStructures\DataStructures\obj\Debug\DataStructures.exe
+C:\Users\scottyboi\Documents\jquery\code\csharp-generics\1-csharp-generics-m1-why-exercise-files\excercises\before\DataStructures\DataStructures\obj\Debug\DataStructures.pdb
+C:\Users\scottyboi\Documents\jquery\code\csharp-generics\1-csharp-generics-m1-why-exercise-files\excercises\before\DataStructures\DataStructures\bin\Debug\DataStructures.exe
+C:\Users\scottyboi\Documents\jquery\code\csharp-generics\1-csharp-generics-m1-why-exercise-files\excercises\before\DataStructures\DataStructures\bin\Debug\DataStructures.pdb
+C:\Users\scottyboi\Documents\jquery\code\csharp-generics\1-csharp-generics-m1-why-exercise-files\excercises\before\DataStructures\DataStructures\obj\Debug\DataStructures.csprojResolveAssemblyReference.cache
