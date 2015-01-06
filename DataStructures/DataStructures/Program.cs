@@ -13,7 +13,7 @@ namespace DataStructures
             SumTheValues(buffer);
         }
 
-        private static void SumTheValues(CircularBuffer<double> buffer)
+        private static void SumTheValues(IBuffer<double> buffer)
         {
             var sum = 0.0;
             Console.WriteLine("Buffer: ");

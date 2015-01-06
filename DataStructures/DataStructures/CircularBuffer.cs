@@ -1,54 +1,65 @@
-﻿using System.Collections;
+﻿using System.Collections.Generic;
 
 namespace DataStructures
 {
-    public class CircularBuffer<T>
+    public class Buffer<T> : IBuffer<T>
     {
-        private T[] _buffer;
-        private int _start;
-        private int _end;
+        protected Queue<T> _queue;
 
-        public CircularBuffer () : this(capacity:10)
-	    {
-	    }
-        
-        public CircularBuffer(int capacity)
+        public Buffer()
         {
-            _buffer = new T[capacity+1];
-            _start = 0;
-            _end = 0;
+            _queue = new Queue<T>();
         }
-        //the input will be which type T will be.
-        public void Write(T value)
+
+        public virtual bool IsEmpty
         {
-            _buffer[_end] = value;
-            _end = (_end + 1) % _buffer.Length;
-            if (_end == _start)
+            get { return _queue.Count == 0; }
+        }
+
+        public virtual T Read()
+        {
+            return _queue.Dequeue();
+        }
+
+        public virtual void Write(T value)
+        {
+            _queue.Enqueue(value);
+        }
+
+        //these allow us to use a foreach on our buffer. 
+        public IEnumerator<T> GetEnumerator()
+        {
+            foreach (var item in _queue)
             {
-                _start = (_start + 1) % _buffer.Length;
+                yield return item;
             }
         }
-        //dont know the return type here
-        public T Read()
+
+        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
         {
-            var result = _buffer[_start];
-            _start = (_start + 1) % _buffer.Length;
-            return result;
+            return this.GetEnumerator();
+        }
+    }
+
+    public class CircularBuffer<T> : Buffer<T>
+    {
+        int _capacity;
+        public CircularBuffer(int capacity = 10)
+        {
+            _capacity = capacity;
         }
 
-        public int Capacity 
-        { 
-            get { return _buffer.Length; } 
-        }
-
-        public bool IsEmpty 
+        public override void Write(T value)
         {
-            get { return _end == _start; }
+            base.Write(value);
+            if (_queue.Count > _capacity)
+            {
+                _queue.Dequeue();
+            }
         }
-
-        public bool IsFull 
+        public bool IsFull
         {
-            get { return (_end + 1) % _buffer.Length == _start;  }
-        }       
+            get { return _queue.Count == _capacity; }
+        }
     }
 }

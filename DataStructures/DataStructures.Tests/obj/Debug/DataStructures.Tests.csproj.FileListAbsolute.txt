@@ -12,3 +12,10 @@ C:\Users\scottyboi\Documents\jquery\code\csharp-generics\1-csharp-generics-m1-wh
 C:\Users\scottyboi\Documents\jquery\code\csharp-generics\1-csharp-generics-m1-why-exercise-files\excercises\before\DataStructures\DataStructures.Tests\obj\Debug\DataStructures.Tests.csprojResolveAssemblyReference.cache
 C:\Users\scottyboi\Documents\jquery\code\csharp-generics\1-csharp-generics-m1-why-exercise-files\excercises\before\DataStructures\DataStructures.Tests\obj\Debug\DataStructures.Tests.dll
 C:\Users\scottyboi\Documents\jquery\code\csharp-generics\1-csharp-generics-m1-why-exercise-files\excercises\before\DataStructures\DataStructures.Tests\obj\Debug\DataStructures.Tests.pdb
+C:\Users\scottyboi\Documents\GitHub\Generics\DataStructures\DataStructures.Tests\bin\Debug\DataStructures.Tests.dll
+C:\Users\scottyboi\Documents\GitHub\Generics\DataStructures\DataStructures.Tests\bin\Debug\DataStructures.Tests.pdb
+C:\Users\scottyboi\Documents\GitHub\Generics\DataStructures\DataStructures.Tests\bin\Debug\DataStructures.exe
+C:\Users\scottyboi\Documents\GitHub\Generics\DataStructures\DataStructures.Tests\bin\Debug\DataStructures.pdb
+C:\Users\scottyboi\Documents\GitHub\Generics\DataStructures\DataStructures.Tests\obj\Debug\DataStructures.Tests.csprojResolveAssemblyReference.cache
+C:\Users\scottyboi\Documents\GitHub\Generics\DataStructures\DataStructures.Tests\obj\Debug\DataStructures.Tests.dll
+C:\Users\scottyboi\Documents\GitHub\Generics\DataStructures\DataStructures.Tests\obj\Debug\DataStructures.Tests.pdb
