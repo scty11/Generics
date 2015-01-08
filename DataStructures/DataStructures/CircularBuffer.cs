@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace DataStructures
 {
@@ -39,10 +41,13 @@ namespace DataStructures
         {
             return this.GetEnumerator();
         }
+
+        
     }
 
     public class CircularBuffer<T> : Buffer<T>
     {
+        public event EventHandler<ItemDiscardedEventArgs<T>> ItemDiscarded;
         int _capacity;
         public CircularBuffer(int capacity = 10)
         {
@@ -54,12 +59,35 @@ namespace DataStructures
             base.Write(value);
             if (_queue.Count > _capacity)
             {
-                _queue.Dequeue();
+                var d = _queue.Dequeue();
+                OnItemDiscarded(d, value);
             }
         }
+
+        private void OnItemDiscarded(T d, T value)
+        {
+            if (ItemDiscarded != null)
+            {
+                ItemDiscarded(this, new ItemDiscardedEventArgs<T>(d, value));
+            }
+        }
+
+       
         public bool IsFull
         {
             get { return _queue.Count == _capacity; }
         }
+    }
+
+    public class ItemDiscardedEventArgs<T> : EventArgs
+    {
+        public ItemDiscardedEventArgs(T discard, T newItem)
+        {
+            ItemDiscarded = discard;
+            NewItem = newItem;
+        }
+
+        public T ItemDiscarded { get; set; }
+        public T NewItem { get; set; }
     }
 }
